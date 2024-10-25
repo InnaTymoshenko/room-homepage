@@ -31,10 +31,9 @@ const config: Config = {
 			lg: '1rem',
 			full: '9999px'
 		},
-		// fontFamily: {
-		// 	sans: 'Barlow Condensed, sans-serif',
-		// 	mono: 'Bellefair, sans-serif'
-		// },
+		fontFamily: {
+			sans: `"League Spartan", serif`
+		},
 		fontSize: {
 			us: ['10px', '12px'],
 			sm: ['12px', '16px'],
@@ -42,10 +41,10 @@ const config: Config = {
 			lg: ['17px', '24px'],
 			xl: ['20px', '28px'],
 			'2xl': ['28px', '36px'],
-			'3xl': ['34px', '46px'],
-			'3.5xl': ['5rem', '6rem'],
-			'4xl': ['6rem', '8rem'],
-			'5xl': ['8rem', '10rem']
+			'3xl': ['46px', '46px']
+			// '3.5xl': ['5rem', '6rem'],
+			// '4xl': ['6rem', '8rem'],
+			// '5xl': ['8rem', '10rem']
 		},
 		colors: {
 			black: 'hsl(0, 0%, 0%)',
@@ -70,18 +69,8 @@ const config: Config = {
 		}),
 		extend: {
 			// backgroundImage: {
-			// 	desktop: "url('/assets/home/background-home-desktop.jpg')",
-			// 	tablet: "url('/assets/home/background-home-tablet.jpg')",
-			// 	mobile: "url('/assets/home/background-home-mobile.jpg')",
-			// 	'dest-desktop': "url('/assets/destination/background-destination-desktop.jpg')",
-			// 	'dest-tablet': "url('/assets/destination/background-destination-tablet.jpg')",
-			// 	'dest-mobile': "url('/assets/destination/background-destination-mobile.jpg')",
-			// 	'crew-desktop': "url('/assets/crew/background-crew-desktop.jpg')",
-			// 	'crew-tablet': "url('/assets/crew/background-crew-tablet.jpg')",
-			// 	'crew-mobile': "url('/assets/crew/background-crew-mobile.jpg')",
-			// 	'technology-desktop': "url('/assets/technology/background-technology-desktop.jpg')",
-			// 	'technology-tablet': "url('/assets/technology/background-technology-tablet.jpg')",
-			// 	'technology-mobile': "url('/assets/technology/background-technology-mobile.jpg')"
+			// 	dark: "url('/images/image-about-dark.jpg')",
+			// 	light: "url('/images/image-about-light.jpg')"
 			// },
 			boxShadow: {
 				'3xl': '0px 0px 10px 80px hsl(0, 0.4%, 54%, 36%)'
