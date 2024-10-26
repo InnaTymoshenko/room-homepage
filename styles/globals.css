@@ -22,8 +22,9 @@ body {
 @layer components {
 	.section {
 		background-repeat: no-repeat;
-		background-position: center;
+		background-position: center center;
 		background-size: cover;
+		/* background-attachment: fixed; */
 	}
 
 	.anima {

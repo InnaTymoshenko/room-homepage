@@ -40,7 +40,7 @@ const config: Config = {
 			md: ['14px', '20px'],
 			lg: ['17px', '24px'],
 			xl: ['20px', '28px'],
-			'2xl': ['28px', '36px'],
+			'2xl': ['34px', '36px'],
 			'3xl': ['46px', '46px']
 			// '3.5xl': ['5rem', '6rem'],
 			// '4xl': ['6rem', '8rem'],
