@@ -11,7 +11,7 @@ const MainSection = (props: Props) => {
 			<div className="w-full h-full">
 				<div className="w-full h-full flex lg:flex-row sx:flex-col items-center">
 					<div className='section lg:w-[60%] sx:w-full lg:h-full sx:h-[50vh] bg-[url("/images/desktop-image-hero-1.jpg")]'></div>
-					<div className="lg:w-[40%] sx:w-full lg:h-full sx:h-[50vh] lg:p-24 sx:p-8 flex flex-col justify-center lg:gap-4 sx:gap-1 relative">
+					<div className="lg:w-[40%] sx:w-full lg:h-full sx:h-[50vh] 2xl:p-24 sx:p-8 flex flex-col justify-center lg:gap-4 sx:gap-1 relative">
 						<h1 className="text-black lg:text-3xl sx:text-2xl font-bold">Discover innovative ways to decorate</h1>
 						<p className="text-gray-100 my-4 text-lg">
 							We provide unmatched quality, comfort, and style for property owners across the country. Our experts
