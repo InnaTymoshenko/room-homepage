@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { League_Spartan } from 'next/font/google'
-import '@/styles/globals.css'
 import Header from '@/components/header'
+import '@/styles/globals.css'
 
 const leagueSpartan = League_Spartan({
 	weight: ['500', '600', '700'],
