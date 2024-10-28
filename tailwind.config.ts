@@ -68,13 +68,20 @@ const config: Config = {
 			primary: 'rgba(var(--color-white))'
 		}),
 		extend: {
-			// backgroundImage: {
-			// 	dark: "url('/images/image-about-dark.jpg')",
-			// 	light: "url('/images/image-about-light.jpg')"
-			// },
-			boxShadow: {
-				'3xl': '0px 0px 10px 80px hsl(0, 0.4%, 54%, 36%)'
+			keyframes: {
+				'slide-in-right': {
+					'0%': { transform: 'translateX(100%)' },
+					'100%': { transform: 'translateX(0)' }
+				},
+				'slide-in-left': {
+					'0%': { transform: 'translateX(-100%)' },
+					'100%': { transform: 'translateX(0)' }
+				}
 			}
+		},
+		animation: {
+			'slide-in-right': 'slide-in-right 0.8s ease-in-out',
+			'slide-in-left': 'slide-in-left 0.8s ease-in-out'
 		}
 	},
 	plugins: []

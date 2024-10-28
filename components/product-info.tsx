@@ -1,19 +1,24 @@
 'use client'
 
 import React from 'react'
+import { Arrow } from './icons/Arrow'
 
 type SliderProps = {
 	activeIndex: number
-	slider: IProduct[]
+	products: IProduct[]
 }
 
-const ProductInfo = ({ activeIndex, slider }: SliderProps) => {
+const ProductInfo = ({ activeIndex, products }: SliderProps) => {
 	return (
 		<>
-			{slider.map((slide, index) => (
-				<div key={index} className={`w-full ${index === activeIndex ? 'block' : 'hidden'}`}>
-					<h1 className="text-black lg:text-3xl sx:text-2xl font-bold">{slide.title}</h1>
-					<p className="text-gray-100 my-4 text-lg">{slide.description}</p>
+			{products.map((product, index) => (
+				<div key={index} className={`w-full  ${index === activeIndex ? 'block ' : 'hidden'}`}>
+					<h1 className="text-black lg:text-3xl sx:text-2xl font-bold">{product.title}</h1>
+					<p className="text-gray-100 mt-6 mb-12 text-lg">{product.description}</p>
+					<div className="w-full uppercase tracking-[0.8em] flex items-center justify-start gap-4 cursor-pointer anima hover:text-gray-100">
+						Shop now
+						<Arrow />
+					</div>
 				</div>
 			))}
 		</>

@@ -1,22 +1,35 @@
 /* eslint-disable @next/next/no-img-element */
 'use client'
 
+import { SCREEN_SIZES, useScreenSize } from '@/utils/hook'
 import React from 'react'
 
 type SliderProps = {
 	activeIndex: number
-	slider: IProduct[]
+	products: IProduct[]
 }
 
-const ProductSlider = ({ activeIndex, slider }: SliderProps) => {
+const ProductSlider = ({ activeIndex, products }: SliderProps) => {
+	const screenSize = useScreenSize()
+
 	return (
 		<>
-			{slider.map((slide, index) => (
+			{products.map((product, index) => (
 				<div
 					key={index}
-					className={`section lg:w-[60%] sx:w-full lg:h-full sx:h-[50vh] ${index === activeIndex ? 'block' : 'hidden'}`}
+					className={`section lg:w-[60%] sx:w-full lg:h-full sx:h-[50vh]   ${
+						index === activeIndex ? 'block' : 'hidden'
+					}`}
 				>
-					<img src={slide.images.desktop} alt="" className="w-full h-full object-cover" />
+					{screenSize === SCREEN_SIZES.MOBILE && (
+						<img src={product.images.mobile} alt="" className="w-full h-full object-cover" />
+					)}
+					{screenSize === SCREEN_SIZES.TABLET && (
+						<img src={product.images.mobile} alt="" className="w-full h-full object-cover" />
+					)}
+					{screenSize === SCREEN_SIZES.PC && (
+						<img src={product.images.desktop} alt="" className="w-full h-full object-cover" />
+					)}
 				</div>
 			))}
 		</>

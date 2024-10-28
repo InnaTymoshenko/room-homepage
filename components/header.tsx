@@ -7,8 +7,6 @@ import { Logo } from './icons/logo'
 import { Hamburger } from './icons/hamburger'
 import { Close } from './icons/close'
 
-// type Props = {}
-
 const Header = () => {
 	const pathname = usePathname()
 	const [isMobile, setIsMobile] = useState(false)
@@ -31,10 +29,7 @@ const Header = () => {
 					) : (
 						<Hamburger
 							className="absolute left-0 lg:hidden sx:block cursor-pointer"
-							onClick={() => {
-								console.log('+')
-								setIsMobile(!isMobile)
-							}}
+							onClick={() => setIsMobile(!isMobile)}
 						/>
 					)}
 					<nav className={`lg:flex items-center lg:gap-8 sx:gap-4 ${isMobile ? 'sx:flex' : 'sx:hidden'}`}>
