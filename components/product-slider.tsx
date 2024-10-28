@@ -17,7 +17,7 @@ const ProductSlider = ({ currentSlide, products }: SliderProps) => {
 			{products.map((product, index) => (
 				<div
 					key={index}
-					className={`section lg:w-[60%] sx:w-full lg:h-full sx:h-[50vh]   ${
+					className={`section lg:w-[60%] sx:w-full lg:h-full sx:h-[50vh] animate-slide-in-left  ${
 						index === currentSlide ? 'block' : 'hidden'
 					}`}
 				>
