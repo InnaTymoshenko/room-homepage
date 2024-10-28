@@ -5,11 +5,11 @@ import { SCREEN_SIZES, useScreenSize } from '@/utils/hook'
 import React from 'react'
 
 type SliderProps = {
-	activeIndex: number
+	currentSlide: number
 	products: IProduct[]
 }
 
-const ProductSlider = ({ activeIndex, products }: SliderProps) => {
+const ProductSlider = ({ currentSlide, products }: SliderProps) => {
 	const screenSize = useScreenSize()
 
 	return (
@@ -18,7 +18,7 @@ const ProductSlider = ({ activeIndex, products }: SliderProps) => {
 				<div
 					key={index}
 					className={`section lg:w-[60%] sx:w-full lg:h-full sx:h-[50vh]   ${
-						index === activeIndex ? 'block' : 'hidden'
+						index === currentSlide ? 'block' : 'hidden'
 					}`}
 				>
 					{screenSize === SCREEN_SIZES.MOBILE && (
