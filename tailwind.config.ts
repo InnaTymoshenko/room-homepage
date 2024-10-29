@@ -38,13 +38,10 @@ const config: Config = {
 			us: ['10px', '12px'],
 			sm: ['12px', '16px'],
 			md: ['14px', '20px'],
-			lg: ['17px', '24px'],
+			lg: ['16px', '24px'],
 			xl: ['20px', '28px'],
 			'2xl': ['34px', '36px'],
 			'3xl': ['46px', '46px']
-			// '3.5xl': ['5rem', '6rem'],
-			// '4xl': ['6rem', '8rem'],
-			// '5xl': ['8rem', '10rem']
 		},
 		colors: {
 			black: 'hsl(0, 0%, 0%)',
@@ -76,12 +73,22 @@ const config: Config = {
 				'slide-in-left': {
 					'0%': { transform: 'translateX(-100%)' },
 					'100%': { transform: 'translateX(0)' }
+				},
+				'fade-in': {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' }
+				},
+				'fade-out': {
+					'0%': { opacity: '1' },
+					'100%': { opacity: '0' }
 				}
 			}
 		},
 		animation: {
 			'slide-in-right': 'slide-in-right 0.8s ease-in-out',
-			'slide-in-left': 'slide-in-left 0.8s ease-in-out'
+			'slide-in-left': 'slide-in-left 0.8s ease-in-out',
+			'fade-in': 'fade-in 0.8s ease-in-out',
+			'fade-out': 'fade-out 0.8s ease-in-out'
 		}
 	},
 	plugins: []

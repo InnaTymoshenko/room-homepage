@@ -55,18 +55,15 @@ const MainSection = () => {
 	}, [handleKeyDown])
 
 	return (
-		<section className="w-full lg:h-[67vh] sx:min-h-[67vh]">
-			<div className="w-full h-full">
-				<div className="w-full h-full flex lg:flex-row sx:flex-col items-center">
+		<section className="w-full lg:h-[62vh] sx:h-[100vh]">
+			<div className="w-full h-full" onTouchStart={handleSwipe}>
+				<div className="w-full h-full flex lg:flex-row sx:flex-col justify-end items-center relative">
 					{products && <ProductSlider currentSlide={currentSlide} products={products} />}
 
-					<div className="lg:w-[40%] sx:w-full lg:h-full sx:h-[50vh] 2xl:p-24 sx:py-8 sx:px-4 flex flex-col justify-center lg:gap-4 sx:gap-1 relative">
+					<div className="lg:w-[40%] sx:w-full lg:h-full sx:h-[50vh]  relative">
 						{products && <ProductInfo currentSlide={currentSlide} products={products} />}
 
-						<div
-							className="lg:w-[25%] md2:w-[30%] sx:w-[40%] lg:h-[80px] sx:h-[60px] flex items-center absolute lg:bottom-0 lg:left-0 sx:right-0 lg:top-auto sx:top-[-60px]"
-							onTouchStart={handleSwipe}
-						>
+						<div className="lg:w-[25%] md2:w-[30%] sx:w-[40%] lg:h-[80px] sx:h-[60px] flex items-center absolute z-50 lg:bottom-0 lg:left-0 sx:right-0 lg:top-auto sx:top-[-60px]">
 							<Button
 								className="w-full h-full bg-black flex justify-center items-center anima hover:bg-gray-200"
 								onClick={prevSlide}

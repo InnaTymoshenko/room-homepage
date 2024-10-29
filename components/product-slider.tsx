@@ -17,8 +17,8 @@ const ProductSlider = ({ currentSlide, products }: SliderProps) => {
 			{products.map((product, index) => (
 				<div
 					key={index}
-					className={`section lg:w-[60%] sx:w-full lg:h-full sx:h-[50vh] animate-slide-in-left  ${
-						index === currentSlide ? 'block' : 'hidden'
+					className={`section lg:w-[60%] sx:w-full lg:h-full sx:h-[50vh] absolute top-0 left-0  ${
+						index === currentSlide ? 'animate-fade-in z-10 ' : 'animate-fade-out z-0 '
 					}`}
 				>
 					{screenSize === SCREEN_SIZES.MOBILE && (

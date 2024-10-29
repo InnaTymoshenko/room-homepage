@@ -14,7 +14,7 @@ const Header = () => {
 	return (
 		<>
 			<header
-				className={`w-full  lg:px-20 sx:px-8 py-12 fixed z-10 lg:top-10 sx:top-0 left-0  ${
+				className={`w-full  lg:px-20 sx:px-8 lg:py-16 sx:py-12 fixed z-50 top-0 left-0  ${
 					isMobile ? 'bg-white' : 'bg-transparent'
 				}`}
 			>
@@ -68,7 +68,7 @@ const Header = () => {
 					</nav>
 				</div>
 			</header>
-			{isMobile && <div className="w-full bg-black/20 absolute top-0 left-0 bottom-0" />}
+			{isMobile && <div className="w-full bg-black/20 absolute z-20 top-0 left-0 bottom-0" />}
 		</>
 	)
 }
