@@ -18,7 +18,7 @@ const ProductSlider = ({ currentSlide, products }: SliderProps) => {
 				<div
 					key={index}
 					className={`section lg:w-[60%] sx:w-full lg:h-full sx:h-[50vh] absolute top-0 left-0  ${
-						index === currentSlide ? 'animate-fade-in z-10 ' : 'animate-fade-out z-0 '
+						index === currentSlide ? 'block' : 'hidden '
 					}`}
 				>
 					{screenSize === SCREEN_SIZES.MOBILE && (
