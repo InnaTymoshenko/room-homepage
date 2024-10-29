@@ -15,11 +15,11 @@ const ProductInfo = ({ currentSlide, products }: SliderProps) => {
 				<div
 					key={index}
 					className={`h-full absolute top-0  right-0 2xl:p-24 sx:py-8 sx:px-4 flex flex-col justify-center lg:gap-4 sx:gap-1 bg-white ${
-						index === currentSlide ? 'block' : 'hidden '
+						index === currentSlide ? 'animate-fade-in z-10 ' : 'animate-fade-out z-0 '
 					} `}
 				>
 					<h1 className="text-black lg:text-3xl sx:text-2xl font-medium">{product.title}</h1>
-					<p className="text-gray-100 mt-6 mb-12 text-lg">{product.description}</p>
+					<p className="text-gray-100 mt-4 mb-6 text-lg">{product.description}</p>
 					<div className="w-full uppercase tracking-[0.8em] flex items-center justify-start gap-4 cursor-pointer anima hover:text-gray-100">
 						Shop now
 						<Arrow />
