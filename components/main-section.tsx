@@ -55,7 +55,7 @@ const MainSection = () => {
 	}, [handleKeyDown])
 
 	return (
-		<section className="w-full lg:h-[62vh] sx:h-[100vh]">
+		<section className="w-full lg:h-[60vh] sx:h-[100vh]">
 			<div className="w-full h-full" onTouchStart={handleSwipe}>
 				<div className="w-full h-full flex lg:flex-row sx:flex-col justify-end items-center relative">
 					{products && <ProductSlider currentSlide={currentSlide} products={products} />}
