@@ -38,10 +38,10 @@ const config: Config = {
 			us: ['10px', '12px'],
 			sm: ['12px', '16px'],
 			md: ['14px', '20px'],
-			lg: ['16px', '24px'],
-			xl: ['20px', '28px'],
+			lg: ['16px', '22px'],
+			xl: ['18px', '24px'],
 			'2xl': ['34px', '36px'],
-			'3xl': ['46px', '46px']
+			'3xl': ['44px', '40px']
 		},
 		colors: {
 			black: 'hsl(0, 0%, 0%)',
