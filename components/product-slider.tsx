@@ -22,13 +22,13 @@ const ProductSlider = ({ currentSlide, products }: SliderProps) => {
 					}`}
 				>
 					{screenSize === SCREEN_SIZES.MOBILE && (
-						<img src={product.images.mobile} alt="" className="w-full h-full object-cover" />
+						<img src={product.images.mobile} alt="" className="w-full h-full object-cover object-center" />
 					)}
 					{screenSize === SCREEN_SIZES.TABLET && (
-						<img src={product.images.mobile} alt="" className="w-full h-full object-cover" />
+						<img src={product.images.mobile} alt="" className="w-full h-full object-cover object-center" />
 					)}
 					{screenSize === SCREEN_SIZES.PC && (
-						<img src={product.images.desktop} alt="" className="w-full h-full object-cover" />
+						<img src={product.images.desktop} alt="" className="w-full h-full object-cover object-center" />
 					)}
 				</div>
 			))}
